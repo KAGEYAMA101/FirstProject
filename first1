@@ -1,0 +1,53 @@
+#Snake - water - gun
+
+import random
+
+
+list = ["snake", "water", "gun"]
+i = 1
+count = 0
+count1 = 0
+while(i != 6):
+   print("BATTLE ", i)
+   print("Please enter your choice!! \nPress 1 for Water\nPress 2 for Snake\nPress 3 for Gun ")
+   a = int(input("Your choice :"))
+   if a<=3 and a>0:
+       b = random.choice(list)
+       print("AIMBOT choice is : ",b)
+       i = i + 1
+       if b=='snake' :
+            if a == 1:
+                print("You lose!!!Snake(Aimbot) Win!!")
+                count1 = count1 + 1
+            elif a == 2:
+                print("Match Draw!!")
+            elif a == 3:
+                print("You Win!!!  You killed snake with gun!!")
+                count = count+1
+       elif b=='water' :
+            if a == 1:
+                print("Match Draw!!")
+            elif a == 2:
+                print("You Win!!!  Your snake drinked water!!")
+                count = count + 1
+            elif a == 3:
+                print("You lose!!Your gun is missing in water!!!")
+                count1 = count1 + 1
+       elif b=='gun':
+            if a == 1:
+                print("You win!!! Aimbot's gun missing in your water!!")
+                count = count + 1
+            elif a == 2:
+                print("You lose!! Your snake were killed by Aimbot!!")
+                count1 = count1 + 1
+            elif a == 3:
+                print("Match Draw!!!")
+   else:
+       print("Error!!! Please Enter from 1 to 3...")
+   print("\n")
+if count > count1 :
+    print("YOU WON THE BATTLE!!")
+elif count < count1 :
+    print("YOU LOSE THE BATTLE!!")
+else :
+    print("MATCH DRAW!!")
