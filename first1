@@ -1,5 +1,4 @@
-#Snake - water - gun
-import random
+
 
 
 list = ["snake", "water", "gun"]
