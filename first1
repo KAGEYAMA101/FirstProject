@@ -1,5 +1,4 @@
 #Snake - water - gun
-
 import random
 
 
@@ -17,8 +16,7 @@ while(i != 6):
        i = i + 1
        if b=='snake' :
             if a == 1:
-                print("You lose!!!Snake(Aimbot) Win!!")
-                count1 = count1 + 1
+                print("You lose!!!Snake(Aimbot) Win!!")count1 = count1 + 1
             elif a == 2:
                 print("Match Draw!!")
             elif a == 3:
